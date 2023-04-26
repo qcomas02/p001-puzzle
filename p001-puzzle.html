@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Puzzle amb un canvas per peça</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+ <div id="form-joc">
+    <p style="text-align: center;"><input type="button" value="Tornar a jugar" id="nouPuzzle" /></p>
+      <div id="marc-puzzle" >
+       
+        <div id="puzzle">
+          <canvas id="solucio"> </canvas>
+         <div id="peces-puzzle">
+          <canvas id="f1c1" class="peca"></canvas><canvas id="f1c2" class="peca"></canvas><canvas id="f1c3" class="peca"></canvas><canvas id="f1c4" class="peca"></canvas>
+          <canvas id="f2c1" class="peca"></canvas><canvas id="f2c2" class="peca"></canvas><canvas id="f2c3" class="peca"></canvas><canvas id="f2c4" class="peca"></canvas>
+          <canvas id="f3c1" class="peca"></canvas><canvas id="f3c2" class="peca"></canvas><canvas id="f3c3" class="peca"></canvas><canvas id="f3c4" class="peca"></canvas>
+        </div>
+        <div id="felicitacio" style="display:none;">
+          <h1> Felicitats!!<br />Fes clic al botó per tornar a jugar</h1>
+        </div>
+      </div>
+      </div>    
+
+  </div>
+ 
+
+  <div id="videos" style="display:none;">
+    <video id="video" preload="auto" autoplay loop width="640" height="360">
+      <source src="videos/BigBuckBunny_640x360.mp4" type='video/mp4'> 
+      <source src="videos/BigBuckBunny_640x360.ogv" type='video/ogv'> 
+   </video>
+   <canvas id="fotograma" width="640" height="360"> </canvas>
+</div>
+
+ <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/p001-puzzle.js"></script>
+<!--script src="js/puzzle.js"></script>-->
+    
+</body>
+</html>
